@@ -1,0 +1,45 @@
+body{
+    background: #ebeff2;
+}
+header{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    width: 100%;
+    height:60px;
+    background: #242529;
+    grid-template-areas: "logo menu";
+    align-items: center;
+    /* border-radius: 2px; */
+    box-shadow: 2px 2px 20px gray;
+}
+
+
+header .logo{
+    grid-area: logo;
+    justify-self:start;
+    padding-left:8em ;   
+}
+
+header .menu{
+    grid-area:menu;
+    justify-self:end;
+    padding-right: 10em;
+}
+
+header .menu button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    justify-self:end;
+    text-decoration: none;
+    background:none;
+    border:none;
+    color: #eff0f4;
+    margin: 8px;
+    padding: 8px;
+ 
+}
+
+header .menu button:hover{
+    background: #0089aa;
+    border-radius: 20px;
+}
